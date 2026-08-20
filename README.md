@@ -1,0 +1,37 @@
+# 📝 RE:VIEW (하루 & 라이프 리뷰 플랫폼)
+
+> 일기장처럼 하루 전체의 삶을 기록하고 종합 평점을 남기며, 하루 안에서 소비한 장소/아이템/콘텐츠를 세부적으로 리뷰하는 와이어프레임 프로토타입입니다.
+
+## 🔗 Live Demo (배포 링크)
+- **GitHub Pages**: [https://jws909.github.io/reveiw-wireframe/](https://jws909.github.io/reveiw-wireframe/)
+
+---
+
+## 💡 주요 기능 & 구조
+
+### 1. 메인 데일리 리뷰 (Main Daily Review)
+- 일기처럼 하루 전체에 대한 총평 기록
+- 하루 종합 별점 (1~5점) 및 기분/태그 선택
+- 대표 이미지 플레이스홀더 영역
+
+### 2. 서브 리뷰 시스템 (Sub-Review System)
+- 하루 안에 종속되는 1:N 세부 리뷰 카드 구조
+- 카테고리별 세분화: 장소 (식당/카페), 아이템 (전자기기/패션), 이동수단, 콘텐츠 등
+- 각 항목별 개별 평점 및 후기 작성
+
+### 3. 제휴 광고 및 비즈니스 모델 (Monetization & BM)
+- 서브 리뷰 아이템/장소와 자연스럽게 연결되는 최저가/제휴 쇼핑 링크 박스(Sponsored Area)
+- 실시간 제휴 링크 및 쿠폰 연동 와이어프레임 구조
+
+### 4. 피드 및 탐색 탭 (Feed & Explore)
+- **피드 뷰**: 날짜별 하루 리뷰 및 포함된 서브 리뷰 뱃지 리스트
+- **탐색 탭**: 유저들의 하루 평점 랭킹, 인기 장소/아이템 큐레이션
+
+---
+
+## 🛠 기술 스택
+- **Framework**: React 18 + TypeScript + Vite
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Router**: React Router (HashRouter)
+- **CI/CD**: GitHub Actions & GitHub Pages
