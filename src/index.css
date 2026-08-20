@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 font-sans;
+  }
+}
+
+/* Custom wireframe blueprint dotted styles */
+.wireframe-grid {
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, rgba(203, 213, 225, 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(203, 213, 225, 0.3) 1px, transparent 1px);
+}
+
+.wireframe-box {
+  @apply border-2 border-dashed border-slate-300 rounded-lg bg-slate-100/60 p-4 transition-all;
+}
+
+.wireframe-box-hover {
+  @apply hover:border-slate-400 hover:bg-slate-100/90;
+}
