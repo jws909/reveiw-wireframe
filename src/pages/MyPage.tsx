@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useAuthContext } from '../context/AuthContext';
 import { useReviewContext } from '../context/ReviewContext';
 import { SubReviewCategory, SubReview } from '../types/review';
@@ -31,7 +31,6 @@ import {
 type MyTab = 'daily' | 'subreviews' | 'liked';
 
 export const MyPage: React.FC = () => {
-  const navigate = useNavigate();
   const { user, isAuthenticated, logout } = useAuthContext();
   const { dailyReviews, deleteDailyReview, likedReviews } = useReviewContext();
 
