@@ -61,7 +61,7 @@ export const SignupPage: React.FC = () => {
     }
 
     signup(name.trim(), email.trim(), selectedTags);
-    alert(`환영합니다, ${name}님! RE:VIEW 회원가입이 완료되었습니다.`);
+    alert(`환영합니다, ${name}님! RE:DAY 회원가입이 완료되었습니다.`);
     navigate('/');
   };
 
@@ -84,7 +84,7 @@ export const SignupPage: React.FC = () => {
             RE
           </div>
           <h1 className="text-xl font-bold text-slate-900 tracking-tight">
-            RE:VIEW 회원가입
+            RE:DAY 회원가입
           </h1>
           <p className="text-xs text-slate-500">
             나만의 하루를 1:N 서브 리뷰로 기록하고 트렌드를 시작하세요.
@@ -116,7 +116,7 @@ export const SignupPage: React.FC = () => {
             </label>
             <input
               type="email"
-              placeholder="example@review.app"
+              placeholder="example@reday.app"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required

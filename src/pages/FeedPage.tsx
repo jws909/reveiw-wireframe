@@ -37,7 +37,7 @@ export const FeedPage: React.FC = () => {
           <div className="space-y-2 max-w-xl">
             <div className="inline-flex items-center gap-2 bg-blue-500/20 text-blue-300 text-xs font-mono px-2.5 py-1 rounded-full border border-blue-400/30">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>RE:VIEW 데일리 라이프 리뷰 와이어프레임</span>
+              <span>RE:DAY 데일리 라이프 리뷰 와이어프레임</span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
               오늘 하루의 평점과 경험을 기록하세요

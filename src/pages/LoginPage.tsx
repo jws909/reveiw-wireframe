@@ -29,7 +29,7 @@ export const LoginPage: React.FC = () => {
   };
 
   const handleSocialLogin = (provider: string) => {
-    login(`${provider.toLowerCase()}_user@review.app`, `${provider} 사용자`);
+    login(`${provider.toLowerCase()}_user@reday.app`, `${provider} 사용자`);
     alert(`[와이어프레임] ${provider} 소셜 계정으로 로그인되었습니다.`);
     navigate('/');
   };
@@ -53,7 +53,7 @@ export const LoginPage: React.FC = () => {
             RE
           </div>
           <h1 className="text-xl font-bold text-slate-900 tracking-tight">
-            RE:VIEW 로그인
+            RE:DAY 로그인
           </h1>
           <p className="text-xs text-slate-500">
             나의 하루를 기록하고 라이프 트렌드를 함께 나눠보세요.
@@ -97,7 +97,7 @@ export const LoginPage: React.FC = () => {
             </label>
             <input
               type="email"
-              placeholder="example@review.app"
+              placeholder="example@reday.app"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -182,7 +182,7 @@ export const LoginPage: React.FC = () => {
 
         {/* Signup Link */}
         <div className="text-center pt-2 border-t border-slate-100 text-xs text-slate-500">
-          아직 RE:VIEW 회원이 아니신가요?{' '}
+          아직 RE:DAY 회원이 아니신가요?{' '}
           <Link to="/signup" className="text-blue-600 hover:text-blue-800 font-bold underline underline-offset-2 ml-1">
             회원가입하기
           </Link>

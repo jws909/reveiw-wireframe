@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 mb-2">
               <span className="font-mono font-bold text-slate-900 bg-slate-200 px-2 py-0.5 rounded text-xs">
-                RE:VIEW
+                RE:DAY
               </span>
               <span className="text-xs font-semibold text-slate-700">하루 & 라이프 리뷰</span>
             </div>
@@ -46,7 +46,7 @@ export const Footer: React.FC = () => {
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
           <div className="flex items-center gap-2">
             <ShieldCheck className="w-4 h-4 text-slate-400" />
-            <span>RE:VIEW Wireframe Prototype v1.0.0 (Vite + React + Tailwind CSS)</span>
+            <span>RE:DAY Wireframe Prototype v1.0.0 (Vite + React + Tailwind CSS)</span>
           </div>
           <div className="font-mono text-[11px]">
             Designed with dashed-border wireframe style for GitHub Pages

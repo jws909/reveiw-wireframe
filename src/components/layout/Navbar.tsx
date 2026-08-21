@@ -37,7 +37,7 @@ export const Navbar: React.FC = () => {
             <div>
               <div className="flex items-center gap-1.5">
                 <span className="font-black text-base sm:text-lg tracking-tight text-slate-900">
-                  RE:VIEW
+                  RE:DAY
                 </span>
                 <span className="bg-blue-50 text-blue-700 text-[10px] font-mono font-bold px-1.5 py-0.5 rounded border border-blue-200">
                   WIREFRAME
@@ -155,7 +155,7 @@ export const Navbar: React.FC = () => {
               <div className="flex items-center gap-2">
                 <Layers className="w-5 h-5 text-blue-600" />
                 <h3 className="font-bold text-base text-slate-900">
-                  RE:VIEW 기획 & 와이어프레임 안내
+                  RE:DAY 기획 & 와이어프레임 안내
                 </h3>
               </div>
               <button
