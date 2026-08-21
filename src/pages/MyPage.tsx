@@ -458,7 +458,7 @@ export const MyPage: React.FC = () => {
                       {/* Overall Rating & Actions */}
                       <div className="flex items-center gap-3">
                         <div className="flex items-center gap-2 bg-amber-50/80 px-3 py-1.5 rounded-lg border border-amber-200">
-                          <StarRating rating={review.overallRating} size="sm" showScore={false} />
+                          <StarRating rating={review.overallRating} size="sm" />
                           <span className="font-bold text-amber-900 text-sm font-mono">
                             {review.overallRating.toFixed(1)}
                           </span>
