@@ -5,6 +5,7 @@ import { INITIAL_DAILY_REVIEWS, SAMPLE_SPONSORED_PRESETS } from '../data/mockDat
 interface ReviewContextType {
   dailyReviews: DailyReview[];
   addDailyReview: (review: Omit<DailyReview, 'id' | 'createdAt' | 'likesCount' | 'commentsCount'>) => DailyReview;
+  deleteDailyReview: (id: string) => void;
   getDailyReviewById: (id: string) => DailyReview | undefined;
   toggleLike: (id: string) => void;
   likedReviews: Record<string, boolean>;
@@ -91,6 +92,10 @@ export const ReviewProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     return newReview;
   };
 
+  const deleteDailyReview = (id: string) => {
+    setDailyReviews(prev => prev.filter(r => r.id !== id));
+  };
+
   const getDailyReviewById = (id: string): DailyReview | undefined => {
     return dailyReviews.find(r => r.id === id);
   };
@@ -116,6 +121,7 @@ export const ReviewProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       value={{
         dailyReviews,
         addDailyReview,
+        deleteDailyReview,
         getDailyReviewById,
         toggleLike,
         likedReviews,

@@ -22,7 +22,7 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 const AUTH_STORAGE_KEY = 'review_current_user_v1';
 
 const DEFAULT_DEMO_USER: User = {
-  id: 'user-me-01',
+  id: 'user-01',
   name: '리뷰어_제이콥',
   email: 'jacob@example.com',
   avatar: 'J',

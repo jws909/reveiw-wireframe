@@ -7,10 +7,11 @@ import {
   PlusCircle, 
   Info, 
   Layers, 
-  Star,
-  Sparkles,
-  LogOut,
-  Flame
+  Star, 
+  Sparkles, 
+  LogOut, 
+  Flame,
+  User as UserIcon
 } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
@@ -80,6 +81,20 @@ export const Navbar: React.FC = () => {
             </NavLink>
 
             <NavLink
+              to="/my"
+              className={({ isActive }) =>
+                `flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-md text-xs sm:text-sm font-medium transition-colors border ${
+                  isActive
+                    ? 'bg-slate-900 text-white border-slate-900 shadow-sm'
+                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100 border-transparent'
+                }`
+              }
+            >
+              <UserIcon className="w-4 h-4" />
+              <span className="hidden xs:inline">내 기록</span>
+            </NavLink>
+
+            <NavLink
               to="/write"
               className={({ isActive }) =>
                 `flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all border ${
@@ -96,7 +111,11 @@ export const Navbar: React.FC = () => {
             {/* Auth Section */}
             {isAuthenticated && user ? (
               <div className="flex items-center gap-1.5 pl-1 sm:pl-2 border-l border-slate-200">
-                <div className="flex items-center gap-1.5 p-1 bg-slate-100 rounded-lg border border-slate-200 text-xs">
+                <Link
+                  to="/my"
+                  title="마이페이지(내 기록)로 이동"
+                  className="flex items-center gap-1.5 p-1 bg-slate-100 hover:bg-slate-200 rounded-lg border border-slate-200 text-xs transition-colors"
+                >
                   <div className="w-6 h-6 rounded-md bg-slate-800 text-white font-mono font-bold flex items-center justify-center text-[11px]">
                     {user.avatar}
                   </div>
@@ -109,7 +128,7 @@ export const Navbar: React.FC = () => {
                       {user.streakDays}일
                     </span>
                   </div>
-                </div>
+                </Link>
                 <button
                   type="button"
                   onClick={handleLogout}

@@ -8,6 +8,7 @@ import { ReviewDetailPage } from './pages/ReviewDetailPage';
 import { ExplorePage } from './pages/ExplorePage';
 import { LoginPage } from './pages/LoginPage';
 import { SignupPage } from './pages/SignupPage';
+import { MyPage } from './pages/MyPage';
 
 export const App: React.FC = () => {
   return (
@@ -23,6 +24,8 @@ export const App: React.FC = () => {
           <Route path="/write" element={<WriteReviewPage />} />
           <Route path="/review/:id" element={<ReviewDetailPage />} />
           <Route path="/explore" element={<ExplorePage />} />
+          <Route path="/my" element={<MyPage />} />
+          <Route path="/mypage" element={<MyPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />

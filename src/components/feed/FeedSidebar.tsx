@@ -16,10 +16,14 @@ export const FeedSidebar: React.FC<FeedSidebarProps> = ({
       {/* User Daily Score Stats Widget (Wireframe) */}
       <div className="border-2 border-dashed border-slate-300 rounded-xl bg-white p-4 space-y-3">
         <div className="flex items-center justify-between pb-2 border-b border-slate-200">
-          <span className="font-bold text-xs text-slate-800 flex items-center gap-1.5">
+          <Link
+            to="/my"
+            className="font-bold text-xs text-slate-800 hover:text-blue-600 flex items-center gap-1.5 transition-colors group"
+          >
             <Award className="w-4 h-4 text-amber-500" />
-            내 하루 평점 통계
-          </span>
+            <span>내 하루 평점 통계</span>
+            <span className="text-[10px] text-slate-400 group-hover:text-blue-500">→</span>
+          </Link>
           <span className="text-[10px] font-mono text-slate-400">최근 7일</span>
         </div>
 
